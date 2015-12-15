@@ -1,19 +1,19 @@
 var request = require('request');
- 
+
 // Set the headers
 var headers = {
-    'User-Agent':       'Super Agent/0.0.1',
+    'User-Agent':       'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko',
     'Content-Type':     'application/x-www-form-urlencoded'
 }
- 
+
 // Configure the request
 var options = {
-    url: 'http://samwize.com',
+    url: 'http://www.kdhservice.com/',
     method: 'GET',
     headers: headers,
     qs: {'key1': 'xxx', 'key2': 'yyy'}
 }
- 
+
 // Start the request
 request(options, function (error, response, body) {
     if (!error && response.statusCode == 200) {
